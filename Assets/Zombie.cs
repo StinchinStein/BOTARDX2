@@ -12,6 +12,13 @@ public class Zombie : MonoBehaviour {
 
 
     void Update() {
-        agent.SetDestination(GameObject.Find("thePlayer").transform.position);
+        agent.isStopped = false;
+        float distance = Vector3.Distance(agent.transform.position, GameObject.Find("thePlayer").transform.position);
+
+        if (distance > 1) {
+            agent.SetDestination(GameObject.Find("thePlayer").transform.position);
+        } else {
+            agent.isStopped = true;
+        }
     }
 }
