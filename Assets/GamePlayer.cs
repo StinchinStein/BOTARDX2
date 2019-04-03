@@ -34,7 +34,7 @@ public class GamePlayer : MonoBehaviour {
     }
 
     private void OnDrawGizmos() {
-        Gizmos.DrawLine(transform.position, mouseHit.point);
+        //Gizmos.DrawLine(transform.position, mouseHit.point);
     }
     void FixedUpdate() {
         float yVel = body.velocity.y;
