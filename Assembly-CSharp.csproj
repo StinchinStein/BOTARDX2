@@ -53,11 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Buildable.cs" />
-     <Compile Include="Assets\CameraFollow.cs" />
      <Compile Include="Assets\CharacterHealth.cs" />
-     <Compile Include="Assets\GamePlayer.cs" />
-     <Compile Include="Assets\Item.cs" />
      <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshLink.cs" />
      <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshModifier.cs" />
      <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs" />
@@ -127,8 +123,14 @@
      <Compile Include="Assets\ProCore\ProGrids\Classes\pg_SceneMeshRender.cs" />
      <Compile Include="Assets\ProCore\ProGrids\Classes\pg_Util.cs" />
      <Compile Include="Assets\ProCore\ProGrids\MonoBehaviour\pg_IgnoreSnap.cs" />
-     <Compile Include="Assets\Weapon.cs" />
-     <Compile Include="Assets\Zombie.cs" />
+     <Compile Include="Assets\Scripts\Buildable.cs" />
+     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\GamePlayer.cs" />
+     <Compile Include="Assets\Scripts\Item.cs" />
+     <Compile Include="Assets\Scripts\MainEngine.cs" />
+     <Compile Include="Assets\Scripts\Weapon.cs" />
+     <Compile Include="Assets\Scripts\Zombie.cs" />
+     <Compile Include="Assets\Scripts\ZSpawner.cs" />
      <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
      <None Include="Assets\ProCore\ProGrids\Shader\pg_GridShader.shader" />
      <None Include="Assets\ProCore\ProBuilder\Shader\pb_TransparentOverlay.shader" />
