@@ -17,6 +17,7 @@ public class Weapon : Item {
                 Instantiate(bulletPrefab, hit.point, Quaternion.identity);
             }
         }
-    }
+
+}
 
 }

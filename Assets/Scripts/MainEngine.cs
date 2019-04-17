@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class MainEngine : MonoBehaviour
 {
@@ -13,10 +14,20 @@ public class MainEngine : MonoBehaviour
 
     void Start() {
         S = this;
+        GameObject.Find("Canvas/CurrentRound").GetComponent<TextMeshProUGUI>().SetText("Round: " + (currentRound + 1));
+
     }
 
     private void Update() {
         runTicks++;
+        if(runTicks > 1500) {
+            if(zombiesSpawned <= 0)
+            {
+                currentRound++;
+                GameObject.Find("Canvas/CurrentRound").GetComponent<TextMeshProUGUI>().SetText("Round: " + (currentRound+1));
+                runTicks = 0;
+            }
+        }
     }
 
 

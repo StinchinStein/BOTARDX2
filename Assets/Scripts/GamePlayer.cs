@@ -33,6 +33,13 @@ public class GamePlayer : MonoBehaviour {
         
     }
 
+    private void OnTriggerEnter(Collider other) {
+        //Debug.Log(other.transform.root.tag);
+        if(other.transform.root.tag == "Zombie") {
+            GetComponent<CharacterHealth>().CurrentHealth -= 2.5f;
+            Debug.Log("HP: " + GetComponent<CharacterHealth>().CurrentHealth);
+        }
+    }
     private void OnDrawGizmos() {
         //Gizmos.DrawLine(transform.position, mouseHit.point);
     }
