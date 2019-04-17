@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6194670315057829468}
   - component: {fileID: 8476400000903181673}
   - component: {fileID: 8752707945775233988}
-  - component: {fileID: 6785395689930488060}
   - component: {fileID: 3522536752391168503}
   m_Layer: 2
   m_Name: Cube
@@ -79,19 +78,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &6785395689930488060
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5580703902198543322}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3522536752391168503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,6 +105,7 @@ GameObject:
   - component: {fileID: 3182010316771515004}
   - component: {fileID: 5953656384786684692}
   - component: {fileID: 3793539480651224149}
+  - component: {fileID: 1063199015039988985}
   m_Layer: 2
   m_Name: Sandbag
   m_TagString: Obstacle
@@ -169,3 +156,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc962a4d70436345b1d164fb562d57c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1063199015039988985
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8892763903410864856}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
